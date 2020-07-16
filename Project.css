@@ -1,0 +1,66 @@
+/*css for all Pages of the project*/
+
+/*this make for 5 pages of website*/
+body {font-family:Arial, Helvetica, sans-serif;}
+.name
+     {
+	   margin-left:20px; display:block;background-color:#e6ffe6 ;width:200px;height:50px;color:#00b300;font-size:50px;
+       font-weight:bold;text-align:center;margin-left: auto;margin-right: auto; padding-bottom:15px
+     }
+.name img{ width:18px; height:25px}
+.nav ul {list-style-type: none;margin: 0; padding: 0;overflow: hidden; background-color: #006633;}
+.nav li {float: left;}
+.nav li a {
+	       display: block;color: white;text-align: center;padding: 22px 26px;text-decoration: none;
+	       font-size:20px;font-weight:bold
+	       }
+.nav li a:hover {background-color: #4CAF50;}
+.main{ text-align:center; color:red;margin-top:20px;margin-bottom:30px}		
+.title{ text-align:center ; color:#ff3333}/*for videos and gallery pages*/
+          /*------------------------------------------------------------------------------*/
+  /*for the table which are in the index page(1)*/
+th{color:red;height:60px;width:100px;}
+td{height:130px;background-color:#EEE;color:blue;}
+table, th,td{border-collapse:collapse;border:4px double #00cc00; max-width:600px;}
+table img{margin-left:50px ;}
+			 /*------------------------------------------------------------------------------*/
+/*for footballers page(2)*/
+.image img { display :block; border-radius: 10%;float:right;}
+.career h3{color:purple;text-align:center}
+.career p{color:green;font-size:15px; font-weight:bold;}
+	
+             /*------------------------------------------------------------------------------*/
+/*for videos page(3)*/		 
+.containervideos{display: block;margin-left: auto;margin-right: auto; max-width:700px;}			 
+			 /*--------------------------------------------------------------------------------*/
+ /*this make for Gallery page(4)*/
+.containerimages{margin-bottom:630px;max-width:1170px;}
+div.gallery {margin:3px; border: 1px solid #ccc;float:left;max-width:22%;}
+div.gallery:hover {border: 1px solid #777;}
+div.gallery img { width: 100%;height:220px;}
+div.desc { padding: 15px; text-align: center;}
+/*for the Menu which are the end of Gallery website page(4)*/
+.dropbtn { background-color: #4CAF50;color: white;padding: 16px;font-size: 16px;border: none;cursor: pointer;}
+.dropdown {position: relative;display: inline-block;}
+.dropdown-content {
+	               display: none;position: absolute;background-color: #DDD;min-width: 160px;
+                   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);z-index: 1;
+                  }
+.dropdown-content a {color: black;padding: 12px 16px;text-decoration: none;display: block;}
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+         /*------------------------------------------------------------------------------*/
+/*this for the form register in this project page(5)*/
+.gender{text-align:left;color:purple; margin-left:30px;}
+.error{text-align:center}
+/* Add padding to containers */
+.containerregister {display: block;margin-left: auto;margin-right: auto; background-color:#ccffe6;max-width:500px;border: 15px double #00cc66;padding: 60px;}
+.details{background-color:#e6fff9; padding-top:10px;padding-bottom:22px;padding-left:20px;padding-right:20px } 
+.details h2{color:#ff9900;text-align:center;}
+.form lable {display:block;color:green ;margin-bottom:10px;margin-top:10px;border:1px}
+.form input { background-color:#EEE;color:#0040ff ;padding:10px;width:60%;margin-bottom:10px}
+.message p { margin-top:55px;font-size:22px;}
+/*this for the which are the end of register website*/
+.button input{ background-color:#ccffcc;color:#00cc00;padding:10px;max-width:50%; float:right;margin-top:20px}
+

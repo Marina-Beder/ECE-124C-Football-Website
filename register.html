@@ -1,0 +1,51 @@
+  
+<!DOCTYPE HTML>
+ <html lang="en">
+     <head>
+      <title> Register </title>
+	  <meta charset="UTF-8"/>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="project.css" type="text/css"/>
+      <script src="project.js"> </script>	   
+	  </head>
+    <body>
+	       <p class="name">F<span><img style ="margin-left:1px ;"src="ball.png" alt="ball" ><img style ="margin-left:2px ;"  src="ball.png" alt="ball"></span>tball</p>
+           <div class="nav">
+		   <ul>
+             <li><a href="index.html">Home</a></li>
+			 <li><a href="footballers.html">Footballers</a></li>
+             <li><a href="videos.html">Videos</a></li>
+             <li><a href="Gallery.html">Gallery</a></li>
+             <li><a href="register.html">Register</a></li>
+           </ul> 
+		 </div>  
+		<h2 class="main">Register </h2>
+	    <div class="containerregister">
+         <div class="details">
+	       <h2>Your Information</h2>
+		 <div class="input">
+	       <form  method="post">
+		     <div class="form" >
+	            <lable>First Name</lable>
+	             <input type="text"placeholder="Type Your First Name"id="fname"><br><span class="error"id="errorfname"></span>
+	            <lable>Last Name</lable>
+	              <input type="text"placeholder="Type Your Last Name"id="lname"><br><span class="error"id="errorlname"></span>
+	            <lable>Password</lable>
+	              <input type="password" placeholder="Type Your Password" id="checkpassword"><br><span  class="error"id="errorpass"></span>
+	            <lable>E-mail</lable>
+	              <input type="email" placeholder="Type Your E-mail" id="email"><br><span class="error"id="erroremail"></span>
+                <lable>Phone Number</lable>
+                  <input type="text"placeholder="Type Your Phone Number"id="checkphone"><br><span class="error" id="errorphone"></span>
+	            <lable>Address</lable>
+		          <input type="text"placeholder="Type Your Addres"id="address"><br><span class="error"id="erroraddress"></span>
+                <lable>Gender</lable>	  
+		     </div>          
+	            <span class= "gender"id="gender" >  <input  type="radio" id="male"name="gender" value="male" >male	                  
+	            <input type="radio" name="gender"id="female"value="female">female</span><br>
+			    <span class="error" id="errorchoose"></span>
+	             <span class="button"><input  type="button" value="Register"onclick=" validate(),PasswordTest(),PhoneTest(),checkall()"></span>
+			 </form>
+	     </div>
+	    <div class="message" > <p id="message"></p></div> </div></div>
+	  </body>
+  </html>
