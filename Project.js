@@ -1,17 +1,15 @@
-//java script for images website page(4)
- 
-      //------------------------------------------------------------------------------------
  //java script for register website page(5)
- //this function to check first name,last name,address and e-mail
+
+//this function to check first name,last name,address,e-mail and female or male
 function validate()
 		{
 	         var fname=document.getElementById('fname').value;
 	         var lname=document.getElementById('lname').value;
-	   	     var address=document.getElementById('address').value;
-             var email=document.getElementById('email').value;
-			 var female=document.getElementById('female');
-			 var male=document.getElementById('male');
-			 var expression = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+	   	 var address=document.getElementById('address').value;
+                 var email=document.getElementById('email').value;
+	         var female=document.getElementById('female');
+	         var male=document.getElementById('male');
+	         var expression = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 
 	         if(fname.length>2)
 			   {document.getElementById("errorfname").innerHTML='';}
@@ -57,7 +55,7 @@ function validate()
   
 	    }
 	 //---------------------------------------------------------------------------------------------
-	  //this function to password which contain must 8 only characters start with uppercase,one dgit at least and one only special character and no space
+	  //this function to password which contain must only 8 characters start with uppercase,one dgit at least and one special character and no space
 function PasswordTest()
 	     {
 	        var pass=document.getElementById("checkpassword").value;
@@ -95,13 +93,13 @@ function PhoneTest()
 	                return false;
 		     		  }
 	               }
-//this function to make message at the end of form if user enter any thing error or user enter all inforation in correct form  				     
+//this function to make message at the end of form if user enter anything error or user enter all information in correct form  				     
 function checkall()
              { 
 			  var fname=document.getElementById('fname').value;
-	          var lname=document.getElementById('lname').value;
-	   	      var address=document.getElementById('address').value;
-              var email=document.getElementById('email').value;
+	                  var lname=document.getElementById('lname').value;
+	   	          var address=document.getElementById('address').value;
+                          var email=document.getElementById('email').value;
 			  var female=document.getElementById('female');
 			  var male=document.getElementById('male');
 			  var phone=document.getElementById("checkphone").value;
