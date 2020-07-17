@@ -112,17 +112,13 @@ function checkall()
 			  { var count= special.length;}
 	            var res = pass.charAt(0);
 		   
-		      if(fname.length>2&&lname.length>2&&address.length>2&&email.match(expression)&&phone.length == 11&&pass.match(/^\S+$/)&& res.match(/[A-Z]/g)&&pass.match(/[0-9]/ )&&pass.match(/[^a-zA-Z\d]/g )&&pass.length==8&&count==1&&(female.checked == true||male.checked ==true))
-	            { 
-			       if(lname.length>2)
-			          {
-						  document.getElementById("message").innerHTML='*Thank You for registration';
+		      if(fname.length>2&&lname.length>2&&address.length>2&&email.match(expression)&&phone.match(/^\d{11}$/ )&&pass.match(/^\S+$/)&& res.match(/[A-Z]/g)&&pass.match(/[0-9]/ )&&pass.match(/[^a-zA-Z\d]/g )&&pass.length==8&&count==1&&(female.checked == true||male.checked ==true))
+	                 { 
+			      document.getElementById("message").innerHTML='*Thank You for registration';
 	                      document.getElementById("message").style.color='#006400';
-					      setTimeout(function(){ alert("Welcome in our Website"); }, 10);
-					      window.location.reload();
-			          }
-			  
-                 }
+			      setTimeout(function(){ alert("Welcome in our Website"); }, 10);
+			      window.location.reload();
+	                 }
 	          else
 			      { 
                    document.getElementById("message").innerHTML=' *Please follow these instructions';
