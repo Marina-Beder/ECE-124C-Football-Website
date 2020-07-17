@@ -83,7 +83,7 @@ function PasswordTest()
 function PhoneTest()
                   {
     		        var phone=document.getElementById("checkphone").value;
-                    if(/^\d{11}$/ )
+                    if(phone.match(/^\d{11}$/ ))
 	                {
 				     document.getElementById("errorphone").innerHTML='';
 	                 return true;
